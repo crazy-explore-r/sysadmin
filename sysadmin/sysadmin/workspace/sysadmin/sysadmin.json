@@ -1,0 +1,54 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"6ExwZH9F1-\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">SysAdmin</span>\",\"col\":12}},{\"id\":\"9U0dnfqzfm\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Servers\",\"col\":3}},{\"id\":\"oIIwlrfd8A\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Online\",\"col\":3}},{\"id\":\"HCwdFZkayB\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Offline\",\"col\":3}}]",
+ "creation": "2024-03-15 12:43:31.262272",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "quality-3",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "SysAdmin",
+ "links": [],
+ "modified": "2024-04-03 11:09:08.059926",
+ "modified_by": "ragul.k@noveloffice.in",
+ "module": "Sysadmin",
+ "name": "SysAdmin",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Cyan",
+   "doc_view": "List",
+   "label": "Servers",
+   "link_to": "Server",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Red",
+   "doc_view": "List",
+   "label": "Offline",
+   "link_to": "Server",
+   "stats_filter": "[[\"Server\",\"ping_status\",\"=\",0,false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Online",
+   "link_to": "Server",
+   "stats_filter": "[[\"Server\",\"ping_status\",\"=\",1,false]]",
+   "type": "DocType"
+  }
+ ],
+ "title": "SysAdmin"
+}

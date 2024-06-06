@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-19 21:59:58.075770",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "base_paths_section",
+  "enabled"
+ ],
+ "fields": [
+  {
+   "fieldname": "base_paths_section",
+   "fieldtype": "Section Break",
+   "label": "Base Paths"
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-03-19 22:02:17.683442",
+ "modified_by": "Administrator",
+ "module": "Sysadmin",
+ "name": "Sysadmin Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

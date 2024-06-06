@@ -1,0 +1,23 @@
+{
+ "content": null,
+ "creation": "2024-03-18 18:07:53.485336",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2024-03-18 18:07:53.485336",
+ "modified_by": "Administrator",
+ "module": "Sysadmin",
+ "name": "terminal",
+ "owner": "Administrator",
+ "page_name": "terminal",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Terminal"
+}

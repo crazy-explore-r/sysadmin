@@ -1,0 +1,11 @@
+.xterm-screen {
+    width: 100% !important;
+}
+
+.xterm-rows {
+    padding: 10px;
+}
+
+.xterm-rows div {
+    width: 100% !important;
+}

@@ -1,0 +1,141 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:ip_address",
+ "creation": "2024-03-14 22:24:09.570552",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "server_details_section",
+  "enabled",
+  "server_type",
+  "ip_address",
+  "username",
+  "password",
+  "column_break_iqwb",
+  "server_label",
+  "server_location",
+  "server_status_section",
+  "ping_status",
+  "ping_response",
+  "column_break_cnbg",
+  "backup_status",
+  "backup_logs"
+ ],
+ "fields": [
+  {
+   "fieldname": "server_details_section",
+   "fieldtype": "Section Break",
+   "label": "Server Details"
+  },
+  {
+   "fieldname": "server_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Server Type",
+   "options": "Primary\nSecondary\nTest"
+  },
+  {
+   "fieldname": "ip_address",
+   "fieldtype": "Data",
+   "label": "IP Address",
+   "unique": 1
+  },
+  {
+   "description": "Name of user who uses the server.",
+   "fieldname": "server_label",
+   "fieldtype": "Data",
+   "label": "Server Label"
+  },
+  {
+   "fieldname": "server_location",
+   "fieldtype": "Select",
+   "label": "Server Location",
+   "options": "NTP\nNOM"
+  },
+  {
+   "fieldname": "column_break_iqwb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "server_status_section",
+   "fieldtype": "Section Break",
+   "label": "Server Status"
+  },
+  {
+   "fieldname": "ping_status",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Ping Status",
+   "length": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_cnbg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ping_response",
+   "fieldtype": "Code",
+   "label": "Ping Response",
+   "read_only": 1
+  },
+  {
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Username"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Password",
+   "hidden": 1,
+   "label": "Password"
+  },
+  {
+   "fieldname": "backup_status",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Backup Status",
+   "length": 1
+  },
+  {
+   "fieldname": "backup_logs",
+   "fieldtype": "Code",
+   "hidden": 1,
+   "label": "Backup Logs",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-03 10:35:33.368330",
+ "modified_by": "Administrator",
+ "module": "Sysadmin",
+ "name": "Server",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

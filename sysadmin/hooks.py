@@ -4,6 +4,25 @@ app_publisher = "Ragul KM"
 app_description = "Manage Servers Flawlessly"
 app_email = "developer.ragul@gmail.com"
 app_license = "mit"
+
+scheduler_events = {
+    "all": [
+        # Other scheduled tasks here
+    ],
+    "cron": {
+        "*/5 * * * *": [
+            "sysadmin.sysadmin.doctype.server.server.check_all_ping_status"
+        ]
+    }
+}
+
+doc_events = {
+    "Server": {
+        "before_save": "sysadmin.sysadmin.doctype.server.server.check_and_update_server_status",
+    }
+}
+
+
 # required_apps = []
 
 # Includes in <head>
@@ -227,3 +246,5 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+
+website_route_rules = [{'from_route': '/dashboard/<path:app_path>', 'to_route': 'dashboard'},]
